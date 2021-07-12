@@ -16,14 +16,15 @@ function setup() {
   Engine.run(engine);
   bg = createSprite(400, 150, 50, 50);
   bg.addImage(bgImg);
-  
-  snow = new Snowflake(100, 400);
+
+  snow = new Snowflake(random(10, 390), 5);
 }
 
 function draw() {
   background("blue");
   
-  //snow.display;
+
+  snow.display;
 
   drawSprites();
 }
