@@ -21,7 +21,9 @@ function setup() {
 }
 
 function draw() {
-  background("blue");  
-  snow.display;
+  background("blue");
+  
+  //snow.display;
+
   drawSprites();
 }

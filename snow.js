@@ -4,9 +4,7 @@ class Snowflake{
             friction: 0.05,
             density: 0.2
         }
-        this.body = Bodies.circle(x, y, 50, 50, options);
-        this.width = width;
-        this.height = height;
+        this.body = Matter.Bodies.circle(x, y, 50, options,50);
         this.image = loadImage("snow4.webp");
         World.add(world, this.body);
       }
